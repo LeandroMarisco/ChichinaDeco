@@ -1,0 +1,300 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'open sans';
+  font-size: 16px;
+}
+
+header{
+  height: 700px;
+  position: relative;
+  background-image: url(logo.jpg);
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 130px;
+  
+}
+
+.sesgoabajo-header{
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 350vh 2000vw;
+  border-style: solid;
+  border-color: transparent transparent #cdcfcf transparent;
+}
+
+.sesgoabajo{
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 600vw;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.sesgoarriba{
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width:35vh 100vw 0 0 ;
+  border-style: solid;
+  border-color: #cdcfcf transparent transparent transparent;
+}
+
+.sesgoarribaFotos{
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width:10vh 100vw 0 0 ;
+  border-style: solid;
+  border-color: #cdcfcf transparent transparent transparent;
+}
+
+
+.sesgoabajo-fotos{
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 10vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #cdcfcf transparent;
+}
+
+.acerca-de{
+  background: #cdcfcf;
+  height: auto;
+  text-align: center;
+  text-justify: auto;
+  width: auto;
+}
+.contenedor{
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 52px 0;
+  text-align: center;
+}
+
+.sobre-nosotros{
+  text-align: center;
+  font-size: 65px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.parrafo{
+  max-width: 750px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  margin-left: 130px;
+}
+
+.galeria{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.imagenes{
+  width: 20%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imagenes img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.encima{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #cdcfcf;
+
+}
+
+.encima .boton {
+  margin-top: 70%;
+  display: inline-block;
+  margin-left: 30%;
+  padding: 6px;
+  width: 128px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.encima .boton:hover{
+  background: #cdcfcf;
+
+}
+
+
+.fondo{
+  height: 900px;
+  position: relative;
+  background-image: url(logo.jpg);
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 130px;
+}
+
+.sesgoabajo-unico{
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #cdcfcf transparent;
+}
+
+
+
+footer{
+  background: #cdcfcf;
+  height: auto;
+}
+
+.titulo-footer, .subtitulo-footer{
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+}
+
+.subtitulo-footer{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 64px;
+}
+
+form{
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+input/*[type"text"], input[type="email"]*/{
+  display: inline-block;
+  width: 48%;
+  padding: 13px;
+  border: none;
+  color: #fff;
+  font-family: 'open sans';
+  background:rgba(37, 37, 33, .7);
+  margin-bottom: 16px;
+  border-top: 1px solid rgba(37, 37, 33, .7);
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+ max-height: 200px;
+  min-height: 200px;
+  background:rgba(37, 37, 33, .7);
+  padding: 13px;
+  border: none;
+  color: #fff;
+  font-family: 'open sans';
+  margin-bottom: 16px;
+}
+
+input[type="submit"]{
+  display: inline-block;
+  padding: 13px;
+  border: none;
+  color: #fff;
+  background:rgba(37, 37, 33, .7);
+  width: 96px
+
+}
+
+@media screen and (max-width:900px) {
+  .card{
+    width: 48%;
+  }
+}
+
+@media screen and (max-width:610px) {
+  header .textos{
+    margin-top: 130px;
+  }
+  header .titulo{
+    font-size: 75px;
+  }
+  .none{display: none}
+  .imagenes{
+    flex-grow: 1;
+  }
+
+.card{
+  width: 90%;
+}
+.fondo{
+  height: auto;
+}
+.especial{
+  display: none;
+}
+.cliente{
+  width: 90%;
+  height: 200px;
+  margin-bottom: 50px;
+}
+}
+
+@media screen and (max-width:380px) {
+  header .textos{
+    margin-top: 100px;
+  }
+
+  header .titulo{
+    font-size: 65px;
+  }
+
+  header .subtitulo{
+    font-size: 25px
+  }
+  .sobre-nosotros{
+    font-size: 46px;
+  }
+  .slogan{
+    font-size: 18px;
+  }
+.titulo-patrocinadores{
+  font-size: 46px
+}
+
+.subtitulo-patrocinadores{
+  font-size: 20px;
+}
+}
